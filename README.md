@@ -48,9 +48,7 @@ Esse projeto foi desenvolvido durante a **[Next Level Week](https://nextlevelwee
 
 ## 🔖 Layout
 
-Você pode ver o layout do projeto através dos links abaixo 
-
-- [Layout Web](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761) 
+Você pode ver o layout do projeto através acessado [Layout Web](https://www.figma.com/file/WqBN67b4cXry2yHs65SPso/Podcastr?node-id=160%3A2761) 
 
 Você precisa ter uma conta no [Figma](http://figma.com/) para acessar.
 
