@@ -5,3 +5,16 @@
         flex: 1;
     }
 }
+
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+
+        main {
+            max-height: 75vh;
+            overflow-y: hidden;
+        }
+    }
+
+     
+}
