@@ -42,7 +42,7 @@ export function Player() {
     }
 
     function handleEpisodeEndend() {
-        if(hasNext) {
+        if (hasNext) {
             playNext()
         } else {
             clearPlayerState()
@@ -61,8 +61,10 @@ export function Player() {
             { episode ? (
                 <div className={styles.currentEpisode}>
                     <Image width={592} height={592} src={episode.thumbnail} objectFit="cover" />
-                    <strong>{episode.title}</strong>
-                    <span>{episode.members}</span>
+                    <div className={styles.currentEpisodeTitleContainer}>
+                        <strong>{episode.title}</strong>
+                        <span>{episode.members}</span>
+                    </div>
                 </div>
             ) : (
                 <div className={styles.emptyPlayer}>
@@ -73,7 +75,7 @@ export function Player() {
 
             <footer className={!episode ? styles.empty : ''}>
                 <div className={styles.progress}>
-                <span>{episode ? convertDurationToTimeString(progress) : '00:00:00'}</span>
+                    <span>{episode ? convertDurationToTimeString(progress) : '00:00:00'}</span>
                     <div className={styles.slider}>
                         {episode ? (
                             <Slider

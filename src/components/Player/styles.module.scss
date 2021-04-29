@@ -34,9 +34,19 @@
 @media (max-width: 1024px) {
     .playerContainer {
         width: 100%;
-        max-height: 25vh;
-        display: flex;
         flex-direction: row;
+        height: 25vh;
+        
+        header {
+            display: none;
+        }
+
+        footer {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
 }
@@ -64,12 +74,24 @@
 
 @media (max-width: 1024px) {
     .currentEpisode {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 10rem auto;
+        column-gap: 1rem;
+        text-align: start;
 
         img {
-            display: none;
-            max-height: 3rem;
+            max-height: 25px;
+        }
+
+        strong {
+            margin-top: 0;
+        }
+        
+        .currentEpisodeTitleContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }
@@ -160,5 +182,12 @@
         &.isActive:hover {
             filter: brightness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
         }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .buttons {
+        margin-top: 1rem;
     }
 }
